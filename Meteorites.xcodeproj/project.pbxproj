@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		660551A131C26271FEDDF610 /* Pods_Meteorites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB63821BF4C13FE4EF644FB0 /* Pods_Meteorites.framework */; };
 		C3ACCED5270CA2DA006DE529 /* MeteoritesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ACCED4270CA2DA006DE529 /* MeteoritesApp.swift */; };
 		C3ACCED7270CA2DA006DE529 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ACCED6270CA2DA006DE529 /* ContentView.swift */; };
 		C3ACCED9270CA2DC006DE529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3ACCED8270CA2DC006DE529 /* Assets.xcassets */; };
@@ -19,6 +20,9 @@
 		C3ACCED6270CA2DA006DE529 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C3ACCED8270CA2DC006DE529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3ACCEDB270CA2DC006DE529 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DB63821BF4C13FE4EF644FB0 /* Pods_Meteorites.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meteorites.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE604224D1BCC64B0B126885 /* Pods-Meteorites.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meteorites.release.xcconfig"; path = "Target Support Files/Pods-Meteorites/Pods-Meteorites.release.xcconfig"; sourceTree = "<group>"; };
+		F9F42D68FFCBE09FBBE48147 /* Pods-Meteorites.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meteorites.debug.xcconfig"; path = "Target Support Files/Pods-Meteorites/Pods-Meteorites.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +30,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				660551A131C26271FEDDF610 /* Pods_Meteorites.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77DDE0A06AA16FB2CBF30B8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB63821BF4C13FE4EF644FB0 /* Pods_Meteorites.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		951EC959C09C9A32E2C9586C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9F42D68FFCBE09FBBE48147 /* Pods-Meteorites.debug.xcconfig */,
+				EE604224D1BCC64B0B126885 /* Pods-Meteorites.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C3ACCEC8270CA2DA006DE529 = {
 			isa = PBXGroup;
 			children = (
 				C3ACCED3270CA2DA006DE529 /* Meteorites */,
 				C3ACCED2270CA2DA006DE529 /* Products */,
+				951EC959C09C9A32E2C9586C /* Pods */,
+				77DDE0A06AA16FB2CBF30B8E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3ACCEDF270CA2DC006DE529 /* Build configuration list for PBXNativeTarget "Meteorites" */;
 			buildPhases = (
+				A7D9589D66721C528D302AE4 /* [CP] Check Pods Manifest.lock */,
 				C3ACCECD270CA2DA006DE529 /* Sources */,
 				C3ACCECE270CA2DA006DE529 /* Frameworks */,
 				C3ACCECF270CA2DA006DE529 /* Resources */,
+				F8A9A8F2E7F5C97BE79A1FEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7D9589D66721C528D302AE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Meteorites-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8A9A8F2E7F5C97BE79A1FEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meteorites/Pods-Meteorites-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Meteorites/Pods-Meteorites-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Meteorites/Pods-Meteorites-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3ACCECD270CA2DA006DE529 /* Sources */ = {
@@ -263,6 +332,7 @@
 		};
 		C3ACCEE0270CA2DC006DE529 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9F42D68FFCBE09FBBE48147 /* Pods-Meteorites.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,6 +362,7 @@
 		};
 		C3ACCEE1270CA2DC006DE529 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE604224D1BCC64B0B126885 /* Pods-Meteorites.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
