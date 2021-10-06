@@ -8,18 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		660551A131C26271FEDDF610 /* Pods_Meteorites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB63821BF4C13FE4EF644FB0 /* Pods_Meteorites.framework */; };
+		C3396990270DE74D00DBB229 /* MeteoriteRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C339698F270DE74D00DBB229 /* MeteoriteRequest.swift */; };
+		C3396992270E22CC00DBB229 /* ContentRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3396991270E22CC00DBB229 /* ContentRowView.swift */; };
+		C3396994270E230C00DBB229 /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3396993270E230C00DBB229 /* DetailRowView.swift */; };
 		C3ACCED5270CA2DA006DE529 /* MeteoritesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ACCED4270CA2DA006DE529 /* MeteoritesApp.swift */; };
 		C3ACCED7270CA2DA006DE529 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3ACCED6270CA2DA006DE529 /* ContentView.swift */; };
 		C3ACCED9270CA2DC006DE529 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3ACCED8270CA2DC006DE529 /* Assets.xcassets */; };
 		C3ACCEDC270CA2DC006DE529 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3ACCEDB270CA2DC006DE529 /* Preview Assets.xcassets */; };
+		C3BFBA8D270CC2B20057539A /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BFBA8C270CC2B20057539A /* Provider.swift */; };
+		C3BFBA94270CC9430057539A /* CurrentAppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BFBA93270CC9430057539A /* CurrentAppManager.swift */; };
+		C3BFBA9A270CCC300057539A /* MeteoritesTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BFBA99270CCC300057539A /* MeteoritesTarget.swift */; };
+		C3BFBA9C270CCC3B0057539A /* MeteoritesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BFBA9B270CCC3B0057539A /* MeteoritesService.swift */; };
+		C3BFBA9F270CD2240057539A /* MeteoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BFBA9E270CD2240057539A /* MeteoritesViewModel.swift */; };
+		C3C33A15270CE7D7000592CB /* Meteorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C33A14270CE7D7000592CB /* Meteorite.swift */; };
+		C3C33A19270CF8B5000592CB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C33A18270CF8B5000592CB /* DetailView.swift */; };
+		C3C33A1B270CF900000592CB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C33A1A270CF900000592CB /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C339698F270DE74D00DBB229 /* MeteoriteRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoriteRequest.swift; sourceTree = "<group>"; };
+		C3396991270E22CC00DBB229 /* ContentRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRowView.swift; sourceTree = "<group>"; };
+		C3396993270E230C00DBB229 /* DetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRowView.swift; sourceTree = "<group>"; };
 		C3ACCED1270CA2DA006DE529 /* Meteorites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meteorites.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3ACCED4270CA2DA006DE529 /* MeteoritesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoritesApp.swift; sourceTree = "<group>"; };
 		C3ACCED6270CA2DA006DE529 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C3ACCED8270CA2DC006DE529 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C3ACCEDB270CA2DC006DE529 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C3BFBA8C270CC2B20057539A /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		C3BFBA93270CC9430057539A /* CurrentAppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAppManager.swift; sourceTree = "<group>"; };
+		C3BFBA99270CCC300057539A /* MeteoritesTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoritesTarget.swift; sourceTree = "<group>"; };
+		C3BFBA9B270CCC3B0057539A /* MeteoritesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoritesService.swift; sourceTree = "<group>"; };
+		C3BFBA9E270CD2240057539A /* MeteoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeteoritesViewModel.swift; sourceTree = "<group>"; };
+		C3C33A14270CE7D7000592CB /* Meteorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteorite.swift; sourceTree = "<group>"; };
+		C3C33A18270CF8B5000592CB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		C3C33A1A270CF900000592CB /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		DB63821BF4C13FE4EF644FB0 /* Pods_Meteorites.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Meteorites.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE604224D1BCC64B0B126885 /* Pods-Meteorites.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meteorites.release.xcconfig"; path = "Target Support Files/Pods-Meteorites/Pods-Meteorites.release.xcconfig"; sourceTree = "<group>"; };
 		F9F42D68FFCBE09FBBE48147 /* Pods-Meteorites.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meteorites.debug.xcconfig"; path = "Target Support Files/Pods-Meteorites/Pods-Meteorites.debug.xcconfig"; sourceTree = "<group>"; };
@@ -51,7 +73,6 @@
 				F9F42D68FFCBE09FBBE48147 /* Pods-Meteorites.debug.xcconfig */,
 				EE604224D1BCC64B0B126885 /* Pods-Meteorites.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,7 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				C3ACCED4270CA2DA006DE529 /* MeteoritesApp.swift */,
-				C3ACCED6270CA2DA006DE529 /* ContentView.swift */,
+				C3BFBA8A270CA8810057539A /* Views */,
+				C3BFBA9D270CD15B0057539A /* ViewModels */,
+				C3BFBA8E270CC36A0057539A /* Base */,
+				C3BFBA89270CA8740057539A /* Network */,
+				C3BFBA88270CA8660057539A /* Model */,
 				C3ACCED8270CA2DC006DE529 /* Assets.xcassets */,
 				C3ACCEDA270CA2DC006DE529 /* Preview Content */,
 			);
@@ -90,6 +115,69 @@
 				C3ACCEDB270CA2DC006DE529 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C3BFBA88270CA8660057539A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3C33A14270CE7D7000592CB /* Meteorite.swift */,
+				C339698F270DE74D00DBB229 /* MeteoriteRequest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3BFBA89270CA8740057539A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C3BFBA98270CCBFC0057539A /* Services */,
+				C3BFBA95270CCBB80057539A /* Targets */,
+				C3BFBA8C270CC2B20057539A /* Provider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C3BFBA8A270CA8810057539A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C3ACCED6270CA2DA006DE529 /* ContentView.swift */,
+				C3C33A18270CF8B5000592CB /* DetailView.swift */,
+				C3C33A1A270CF900000592CB /* MapView.swift */,
+				C3396991270E22CC00DBB229 /* ContentRowView.swift */,
+				C3396993270E230C00DBB229 /* DetailRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C3BFBA8E270CC36A0057539A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				C3BFBA93270CC9430057539A /* CurrentAppManager.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C3BFBA95270CCBB80057539A /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				C3BFBA99270CCC300057539A /* MeteoritesTarget.swift */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		C3BFBA98270CCBFC0057539A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C3BFBA9B270CCC3B0057539A /* MeteoritesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C3BFBA9D270CD15B0057539A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C3BFBA9E270CD2240057539A /* MeteoritesViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +295,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3ACCED7270CA2DA006DE529 /* ContentView.swift in Sources */,
+				C3396992270E22CC00DBB229 /* ContentRowView.swift in Sources */,
+				C3BFBA94270CC9430057539A /* CurrentAppManager.swift in Sources */,
+				C3396994270E230C00DBB229 /* DetailRowView.swift in Sources */,
+				C3BFBA9A270CCC300057539A /* MeteoritesTarget.swift in Sources */,
+				C3C33A1B270CF900000592CB /* MapView.swift in Sources */,
+				C3396990270DE74D00DBB229 /* MeteoriteRequest.swift in Sources */,
+				C3C33A19270CF8B5000592CB /* DetailView.swift in Sources */,
+				C3BFBA8D270CC2B20057539A /* Provider.swift in Sources */,
+				C3BFBA9C270CCC3B0057539A /* MeteoritesService.swift in Sources */,
+				C3BFBA9F270CD2240057539A /* MeteoritesViewModel.swift in Sources */,
+				C3C33A15270CE7D7000592CB /* Meteorite.swift in Sources */,
 				C3ACCED5270CA2DA006DE529 /* MeteoritesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
