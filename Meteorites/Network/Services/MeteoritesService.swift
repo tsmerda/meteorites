@@ -29,25 +29,6 @@ class MeteoritesService {
             }
         }
     }
-    
-    func loadMoreMeteorites(limit: Int, completion: @escaping (Result<[Meteorite], MeteoriteError>) -> Void) {
-        provider.request(.loadMoreMeteorites(MeteoriteRequest(limit: limit, offset: 0))) { result in
-            switch result {
-            case .success(let response):
-                do {
-                    let preview = try response
-                        .filterSuccessfulStatusCodes()
-                        .map([Meteorite].self)
-                    completion(.success(preview))
-                } catch {
-                    print("Failed decoding with: \(error.localizedDescription)")
-                    completion(.failure(.generic))
-                }
-            case .failure(let error):
-                completion(.failure(.underlying(error)))
-            }
-        }
-    }
 }
 
 enum MeteoriteError: Error {

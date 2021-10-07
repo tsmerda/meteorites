@@ -12,35 +12,31 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
+            VStack {
                 HStack {
                     Text("Total meteorite landings since 2011:")
                         .font(.subheadline)
                     
                     Text("\(viewModel.meteoriteList?.count ?? 0)")
-                        .foregroundColor(Color("backgroundColor"))
+                        .foregroundColor(Color.red)
                         .bold()
                         .font(.headline)
                 }
                 .padding()
                 
                 ScrollView {
-                    ForEach(viewModel.loadedMeteorites ?? []) { meteorite in
-                        NavigationLink(destination: DetailView(meteorite: meteorite)) {
-                            ContentRowView(title: meteorite.name, mass: meteorite.mass ?? "", date: viewModel.getRemainingTime(date: meteorite.year ?? ""))
+                    LazyVStack { // LazyVStack or Infinite scroll
+                        ForEach(viewModel.meteoriteList ?? []) { meteorite in
+                            NavigationLink(destination: DetailView(meteorite: meteorite)) {
+                                ContentRowView(title: meteorite.name, mass: meteorite.mass ?? "", date: viewModel.getRemainingTime(date: meteorite.year ?? ""))
+                            }
                         }
                     }
-                    
-                    Button(action: viewModel.loadMoreMeteorites) {
-                        Text("Load more meteorites")
-                            .font(.headline)
-                    }
                 }
-                
             }
-            .navigationTitle("Meteorites")
-            
+            .navigationBarTitle("Meteorites")
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

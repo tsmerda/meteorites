@@ -15,8 +15,8 @@ struct DetailView: View {
     var body: some View {
         VStack {
             MapView(coordinates: CLLocationCoordinate2D(latitude: Double(meteorite.reclat ?? "")!, longitude: Double(meteorite.reclong ?? "")!))
-                .frame(height: .infinity)
-                .cornerRadius(32)
+                .frame(height: UIScreen.main.bounds.height - 280)
+                .cornerRadius(24)
             
             Spacer()
             VStack(alignment: .leading, spacing: 8) {
@@ -48,7 +48,7 @@ struct DetailView: View {
             }
             .padding(16)
             .background(Color("backgroundColor"))
-            .frame(height: 300)
+            .frame(height: 280)
             .edgesIgnoringSafeArea(.all)
             
             
